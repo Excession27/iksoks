@@ -1,0 +1,57 @@
+body {
+    background-color: cadetblue;
+}
+
+.container {
+    margin-top: 60px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: gray;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.top {
+    padding-top: 10px;
+}
+
+.bottom {
+    padding-bottom: 10px;
+}
+
+.box {
+    width: 120px;
+    height: 120px;
+    background-color: aquamarine;
+    margin: 10px;
+    
+}
+
+.iks {
+    background-image: url(assets/x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    
+}
+
+.oks {
+    background-image: url(assets/circle.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.victory {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+    color: rgba(217, 255, 0, 0.918);
+}
