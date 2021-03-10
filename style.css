@@ -1,11 +1,15 @@
 body {
     background-color: cadetblue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    
 }
 
 
 .container {
-    margin-top: 60px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
