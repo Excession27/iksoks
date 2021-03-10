@@ -4,6 +4,7 @@ allBoxes.forEach(function (element) {
     element.addEventListener("click", function (event) {
         if (!(event.target.classList.contains("iks") || event.target.classList.contains("oks"))) {
             // console.log(drawSymbol());
+            console.log(location);
             event.target.classList.add(drawSymbol());
             isVictorious();
         }
@@ -12,17 +13,20 @@ allBoxes.forEach(function (element) {
 })
 
 
-
 function draw() {
     let lastSymbol = "oks";
     function changeLastDrawnSymbol() {
         return (lastSymbol = lastSymbol === "oks" ? "iks" : "oks");
+        // if (lastSymbol === "oks"){
+        //     lastSymbol = "iks";
+        // } else  {
+        //     lastSymbol = "oks";
+        // }
     }
     return changeLastDrawnSymbol;
 }
 
 let drawSymbol = draw();
-
 
 function isVictorious() {
     let iksFields = document.querySelectorAll(".iks");

@@ -1,6 +1,8 @@
 body {
     background-color: cadetblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 
 .container {
     margin-top: 60px;
@@ -9,6 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 10px;
+    z-index: 1;
 }
 
 .row {
@@ -28,10 +31,10 @@ body {
 }
 
 .box {
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
     background-color: aquamarine;
-    margin: 10px;
+    margin: 8px;
     
 }
 
@@ -51,7 +54,91 @@ body {
 }
 
 .victory {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    
     font-size: 32px;
     color: rgba(217, 255, 0, 0.918);
+}
+
+.enter-players {
+    position: absolute;
+    z-index: 2;
+    height: 400px;
+    width: 400px;
+    background-color: rgba(100, 148, 237);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-name {
+    padding: 10px 15px;
+    background-color: darkgray;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    width: 110px;
+    outline: none;
+}
+
+#start-game {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: darkslateblue;
+    border: none;
+    color: rgba(217, 255, 0, 0.918);
+    outline: none;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    font-size: 1.1rem;
+}
+
+#start-game:hover {
+    background-color: rgb(96, 88, 153);
+    transition-duration: 0.5s;
+}
+
+.scoreboard {
+    display: flex;
+    flex-flow: column wrap;
+    width: 250px;
+    min-height: 100px;
+    background-color: forestgreen;
+    border: 2px solid rgb(32, 133, 32);
+    border-radius: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+}
+
+.scoreboard:last-child {
+    margin-bottom: 20px;
+}
+
+.scoreboard h2 {
+    order: -999;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    text-align: center;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+.scoreboard li {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-bottom: 12px;
+    list-style: decimal-leading-zero;
+}
+
+.noname-error {
+    text-align: center;
+    
+    font-size: 32px;
+    color: rgba(4, 0, 255, 0.918);
 }
